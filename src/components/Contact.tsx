@@ -92,7 +92,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+       <div className="mt-8 pt-8 border-t border-[#300045] dark:border-[#300045]">
           <p className="text-center text-[#300045] dark:text-gray-300">
             © {new Date().getFullYear()} My Portfolio. All rights reserved.
           </p>
