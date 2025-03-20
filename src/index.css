@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply transition-colors duration-500;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-[#300045] dark:text-[#FFF1CB] hover:text-[#300045]/80 dark:hover:text-[#FFF1CB]/80 transition-colors duration-300 text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-current after:transition-all hover:after:w-full;
+  }
+
+  .mobile-nav-link {
+    @apply block px-3 py-2 rounded-md text-base font-medium text-[#300045] dark:text-[#FFF1CB] hover:text-[#300045]/80 dark:hover:text-[#FFF1CB]/80 hover:bg-[#300045]/5 dark:hover:bg-[#FFF1CB]/5 transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#300045] dark:bg-[#FFF1CB] text-[#FFF1CB] dark:text-[#300045] font-semibold hover:transform hover:scale-105 transition-all duration-300 hover:shadow-[0_0_15px_rgba(48,0,69,0.5)] dark:hover:shadow-[0_0_15px_rgba(255,241,203,0.5)];
+  }
+
+  .section-light {
+    @apply bg-white dark:bg-[#300045] transition-colors duration-500;
+  }
+
+  .section-dark {
+    @apply bg-[#FFF1CB] dark:bg-[#200030] transition-colors duration-500;
+  }
+
+  .text-primary {
+    @apply text-[#300045] dark:text-[#FFF1CB] transition-colors duration-300;
+  }
+
+  .text-secondary {
+    @apply text-[#300045]/90 dark:text-[#FFF1CB]/80 transition-colors duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg bg-[#300045]/5 dark:bg-[#FFF1CB]/5 border border-[#300045]/20 dark:border-[#FFF1CB]/10 focus:outline-none focus:ring-2 focus:ring-[#300045] dark:focus:ring-[#FFF1CB] text-[#300045] dark:text-[#FFF1CB] placeholder-[#300045]/50 dark:placeholder-[#FFF1CB]/50;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animate-scroll {
+    animation: scroll 1.5s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
