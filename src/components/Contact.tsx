@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
-const Footer = () => {
+const Contact = () => {
   return (
     <footer className="bg-[#FFF1CB] dark:bg-slate-800 py-12 mt-20">
       <div className="container mx-auto px-4">
@@ -102,4 +102,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;
