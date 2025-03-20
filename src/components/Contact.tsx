@@ -1,9 +1,9 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <footer className="bg-[#FFF1CB] dark:bg-slate-800 py-12 mt-20">
+    <footer id="contact" className="bg-[#FFF1CB] dark:bg-slate-800 py-12 mt-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Info */}
@@ -100,6 +100,4 @@ const Contact = () => {
       </div>
     </footer>
   );
-};
-
-export default Contact;
+}
