@@ -1,6 +1,7 @@
 import React from 'react';
 import { FileDown, Code, Palette, Database, Globe, Server } from 'lucide-react';
 import profilePic from '../assets/profile.jpg';
+import resume from '../assets/Viraj.pdf'
 
 export default function About() {
   const skills = [
@@ -67,8 +68,8 @@ export default function About() {
               ))}
             </div>
 
-            <button onClick={handleDownload} className="btn-primary">
-              Download Resume
+            <button className="btn-primary">
+              <a href={resume} download={resume}>Download Resume</a>
               <FileDown className="ml-2 w-5 h-5" />
             </button>
           </div>
